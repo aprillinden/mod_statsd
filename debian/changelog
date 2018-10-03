@@ -1,3 +1,9 @@
+libapache2-mod-statsd (1.1) stable; urgency=medium
+
+  * Build using dh-apache2 
+
+ -- April Linden <april@lindenlab.com>  Wed, 03 Oct 2018 03:09:04 +0000
+
 libapache2-mod-statsd (1.0.5-2) unstable; urgency=low
 
   * New build to discern between debian versions

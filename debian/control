@@ -1,13 +1,16 @@
 Source: libapache2-mod-statsd
-Section: unknown
+Section: web
 Priority: extra
 Maintainer: Jos Boumans <mod_statsd@dwim.org>
-Build-Depends: cdbs, debhelper (>= 7), apache2-dev, perl
-Standards-Version: 3.8.3
+Build-Depends: debhelper (>= 9),
+ dh-apache2,
+ apache2-dev
+Standards-Version: 3.9.6
 Homepage: https://github.com/jib/mod_statsd
 
 Package: libapache2-mod-statsd
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ apache2
 Description: Apache module to send request stats to Statsd
  Apache module to send request stats to Statsd
